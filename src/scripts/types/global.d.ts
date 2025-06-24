@@ -12,3 +12,5 @@ type ModalOptions = {
   disableScroll?: boolean;
   disableFocus?: boolean;
 };
+
+declare const Swiper: any;

@@ -24,7 +24,6 @@
   --text-6xl: 8.125rem; // 130px
 
   --breakpoint-3xl: 96rem;
-  --breakpoint-xs: 36rem;
   --font-accent: "ivy-presto", serif;
   --font-base: "Geist", sans-serif;
 }
@@ -57,5 +56,11 @@
     @include hover {
       letter-spacing: 2px;
     }
+  }
+}
+
+@media (max-width: rem(1200)) {
+  br {
+    display: none !important;
   }
 }
