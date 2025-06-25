@@ -1,6 +1,6 @@
 import "../styles/main.scss";
 import Scroll from "./services/scroll";
-import { BaseSlider } from "./components";
+import { BaseSlider, GradientSlider } from "./components";
 
 const scroll = new Scroll();
 
@@ -10,6 +10,7 @@ const initScrollServices = (): void => {
 };
 const initUIComponents = (): void => {
   new BaseSlider();
+  new GradientSlider();
 };
 
 document.addEventListener("DOMContentLoaded", (): void => {
