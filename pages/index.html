@@ -13,13 +13,13 @@
     />
     <title>Home page</title>
   </head>
-  <body>
+  <body class="font-base">
     <div class="relative overflow-hidden">
       {{> header}}
       <main>
         <!-- hero -->
         <section class="flex items-center justify-center bg-cover bg-center bg-no-repeat pt-20 pb-24 sm:pb-8 lg:h-screen lg:pt-24" style="background-image: url(&quot;/images/hero-bg.png&quot;)">
-          <div class="base-container">
+          <div class="container">
             <div class="flex flex-col">
               <span class="bg-primary-dark self-center rounded-2xl px-6 py-2 text-center text-sm leading-4 tracking-wider text-white uppercase max-sm:hidden">Revolutionizing Healthcare with Technology</span>
               <h1 class="font-accent text-shadow mb-6 text-center text-4xl leading-[7.5rem] leading-none tracking-[-0.125rem] text-white max-xl:mt-2 sm:text-5xl xl:text-6xl">
@@ -61,7 +61,7 @@
 
         <!-- Vision Statement -->
         <section class="pt-22.5 pb-32 md:pt-26 md:pb-22.5" id="about">
-          <div class="base-container flex flex-col items-center justify-between gap-x-10 gap-y-10 lg:flex-row">
+          <div class="container flex flex-col items-center justify-between gap-x-10 gap-y-10 lg:flex-row">
             <div class="flex flex-col items-start lg:basis-120">
               <h2 class="font-accent text-primary-dark mb-4 text-3xl leading-none tracking-[-0.125rem] sm:text-4xl md:text-5xl">Vision Statement</h2>
               <p class="text-primary font-base mb-6 text-sm leading-snug font-light sm:mb-10 sm:text-lg">
@@ -80,7 +80,7 @@
 
         <!-- Mission Statement -->
         <section class="relative mb-15 pb-30 md:mb-22.5 md:pb-45">
-          <div class="base-container">
+          <div class="container">
             <div class="flex flex-col items-center gap-y-2 sm:gap-y-6">
               <h2 class="text-left text-3xl leading-none tracking-[-0.125rem] sm:text-center sm:text-4xl md:text-5xl">Mission Statement</h2>
               <p class="text-left leading-tight sm:text-center">
@@ -136,7 +136,7 @@
 
         <!-- Strategix Core Values - Base slider -->
         <section class="py-15 md:py-22.5">
-          <div class="base-container overflow-hidden">
+          <div class="container overflow-hidden">
             <h2 class="font-accent text-primary-dark mb-10 text-center text-3xl leading-none tracking-[-0.125rem] sm:text-4xl md:mb-20 md:text-5xl">Strategix Core Values</h2>
             <div class="relative overflow-hidden md:px-8">
               <div class="pointer-events-none absolute top-[27%] left-0 z-10 flex hidden w-full justify-between md:flex">
@@ -188,7 +188,7 @@
 
         <!-- Healthcare Optimization -->
         <section class="py-15 md:py-22.5">
-          <div class="base-container">
+          <div class="container">
             <div class="flex flex-col items-center">
               <span class="text-primary-dark mb-4 rounded-2xl bg-neutral-100 px-3 py-2 text-center text-xs leading-none font-medium uppercase sm:text-sm">Efficiency, Compliance, Growth</span>
               <h2 class="font-accent text-primary-dark mb-10 text-center text-3xl leading-none tracking-[-0.125rem] sm:text-4xl md:mb-20 md:text-5xl">Healthcare Optimization</h2>
@@ -227,7 +227,7 @@
 
         <!-- Strategix Five-Point Guarantee -->
         <section class="py-15 md:py-22.5">
-          <div class="base-container">
+          <div class="container">
             <div class="flex flex-col items-center">
               <span class="text-primary-dark mb-4 rounded-2xl bg-neutral-100 px-3 py-2 text-center text-xs leading-none font-medium uppercase sm:text-sm"
                 >Built on Purpose. Delivered with Integrity. Designed for Your Long-Term Success</span
@@ -278,6 +278,130 @@
                 </div>
               </div>
               <div class="gradient-swiper-pagination mt-20 flex hidden justify-center md:flex"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Client success stories -->
+        <section class="py-15 md:py-22.5">
+          <div class="container">
+            <div class="flex flex-col items-center">
+              <span class="text-primary-dark mb-4 rounded-2xl bg-neutral-100 px-3 py-2 text-center text-xs leading-none font-medium uppercase sm:text-sm">Testimonials from Current Strategix Clients</span>
+              <h2 class="font-accent text-primary-dark mb-10 text-center text-3xl leading-none tracking-[-0.125rem] sm:text-4xl md:mb-20 md:text-5xl">Client success stories</h2>
+            </div>
+
+            <div class="swiper-slider -m-1 overflow-hidden p-1" id="testimonials-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide !w-[300px] sm:!w-[492px]">
+                  <div>
+                    <div class="left-bottom-clip-path relative z-20 flex flex-col bg-neutral-200 px-3 pt-6 pb-30 sm:px-8 sm:pt-9 sm:pb-36">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="mb-6 h-auto w-11 object-contain sm:w-17.5" viewBox="0 0 70 56" fill="none">
+                        <path
+                          d="M66.7751 7.34746e-06L69.0515 6.01343C60.5149 9.20806 51.0298 16.349 51.0298 24.4295C51.0298 29.3154 53.4959 31.7584 58.8076 32.8859C66.7751 34.5772 70 39.651 70 44.5369C70 50.7383 65.2575 56 57.8591 56C48.7534 56 39.458 48.4832 39.458 34.3893C39.458 14.094 54.8239 3.57048 66.7751 7.34746e-06ZM27.3171 3.89793e-06L29.5935 6.01343C21.0569 9.20806 11.5718 16.349 11.5718 24.4295C11.5718 29.3154 14.0379 31.7584 19.3496 32.8859C27.3171 34.5772 30.542 39.651 30.542 44.5369C30.542 50.7383 25.7995 56 18.4011 56C9.29538 56 -6.97226e-06 48.4832 -5.74012e-06 34.3893C-3.96585e-06 14.094 15.3659 3.57047 27.3171 3.89793e-06Z"
+                          fill="#DADFE1"
+                        />
+                      </svg>
+                      <p class="text-center sm:text-left">
+                        Strategix Healthcare Solutions has been instrumental in revolutionizing our organization's approach to healthcare management. Their expert guidance and strategic insights have significantly
+                        enhanced our operational efficiency and overall performance.
+                      </p>
+                    </div>
+                    <div
+                      class="left-bottom-clip-path absolute top-1/2 left-1/2 z-10 flex h-full w-full -translate-x-[calc(50%+0.5px)] -translate-y-[calc(50%-0.2px)] scale-[1.004] flex-col bg-neutral-300 px-3 pt-6 pb-36 sm:px-8 sm:pt-9"
+                    ></div>
+                    <div class="absolute bottom-0 left-0 z-30 max-w-24">
+                      <p class="font-accent text-primary-dark mb-1.5 text-sm leading-none sm:text-lg">Jackie</p>
+                      <p class="text-primary text-[12px] leading-[1.1] sm:text-sm">Healthcare administrator</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide !w-[300px] sm:!w-[492px]">
+                  <div>
+                    <div class="left-bottom-clip-path relative z-20 flex flex-col bg-neutral-200 px-3 pt-6 pb-30 sm:px-8 sm:pt-9 sm:pb-36">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="mb-6 h-auto w-11 object-contain sm:w-17.5" viewBox="0 0 70 56" fill="none">
+                        <path
+                          d="M66.7751 7.34746e-06L69.0515 6.01343C60.5149 9.20806 51.0298 16.349 51.0298 24.4295C51.0298 29.3154 53.4959 31.7584 58.8076 32.8859C66.7751 34.5772 70 39.651 70 44.5369C70 50.7383 65.2575 56 57.8591 56C48.7534 56 39.458 48.4832 39.458 34.3893C39.458 14.094 54.8239 3.57048 66.7751 7.34746e-06ZM27.3171 3.89793e-06L29.5935 6.01343C21.0569 9.20806 11.5718 16.349 11.5718 24.4295C11.5718 29.3154 14.0379 31.7584 19.3496 32.8859C27.3171 34.5772 30.542 39.651 30.542 44.5369C30.542 50.7383 25.7995 56 18.4011 56C9.29538 56 -6.97226e-06 48.4832 -5.74012e-06 34.3893C-3.96585e-06 14.094 15.3659 3.57047 27.3171 3.89793e-06Z"
+                          fill="#DADFE1"
+                        />
+                      </svg>
+                      <p class="text-center sm:text-left">
+                        Strategix Healthcare Solutions has been instrumental in revolutionizing our organization's approach to healthcare management. Their expert guidance and strategic insights have significantly
+                        enhanced our operational efficiency and overall performance.
+                      </p>
+                    </div>
+                    <div
+                      class="left-bottom-clip-path absolute top-1/2 left-1/2 z-10 flex h-full w-full -translate-x-[calc(50%+0.5px)] -translate-y-[calc(50%-0.2px)] scale-[1.004] flex-col bg-neutral-300 px-3 pt-6 pb-36 sm:px-8 sm:pt-9"
+                    ></div>
+                    <div class="absolute bottom-0 left-0 z-30 max-w-24">
+                      <p class="font-accent text-primary-dark mb-1.5 text-sm leading-none sm:text-lg">Jackie</p>
+                      <p class="text-primary text-[12px] leading-[1.1] sm:text-sm">Healthcare administrator</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide !w-[300px] sm:!w-[492px]">
+                  <div>
+                    <div class="left-bottom-clip-path relative z-20 flex flex-col bg-neutral-200 px-3 pt-6 pb-30 sm:px-8 sm:pt-9 sm:pb-36">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="mb-6 h-auto w-11 object-contain sm:w-17.5" viewBox="0 0 70 56" fill="none">
+                        <path
+                          d="M66.7751 7.34746e-06L69.0515 6.01343C60.5149 9.20806 51.0298 16.349 51.0298 24.4295C51.0298 29.3154 53.4959 31.7584 58.8076 32.8859C66.7751 34.5772 70 39.651 70 44.5369C70 50.7383 65.2575 56 57.8591 56C48.7534 56 39.458 48.4832 39.458 34.3893C39.458 14.094 54.8239 3.57048 66.7751 7.34746e-06ZM27.3171 3.89793e-06L29.5935 6.01343C21.0569 9.20806 11.5718 16.349 11.5718 24.4295C11.5718 29.3154 14.0379 31.7584 19.3496 32.8859C27.3171 34.5772 30.542 39.651 30.542 44.5369C30.542 50.7383 25.7995 56 18.4011 56C9.29538 56 -6.97226e-06 48.4832 -5.74012e-06 34.3893C-3.96585e-06 14.094 15.3659 3.57047 27.3171 3.89793e-06Z"
+                          fill="#DADFE1"
+                        />
+                      </svg>
+                      <p class="text-center sm:text-left">
+                        Strategix Healthcare Solutions has been instrumental in revolutionizing our organization's approach to healthcare management. Their expert guidance and strategic insights have significantly
+                        enhanced our operational efficiency and overall performance.
+                      </p>
+                    </div>
+                    <div
+                      class="left-bottom-clip-path absolute top-1/2 left-1/2 z-10 flex h-full w-full -translate-x-[calc(50%+0.5px)] -translate-y-[calc(50%-0.2px)] scale-[1.004] flex-col bg-neutral-300 px-3 pt-6 pb-36 sm:px-8 sm:pt-9"
+                    ></div>
+                    <div class="absolute bottom-0 left-0 z-30 max-w-24">
+                      <p class="font-accent text-primary-dark mb-1.5 text-sm leading-none sm:text-lg">Jackie</p>
+                      <p class="text-primary text-[12px] leading-[1.1] sm:text-sm">Healthcare administrator</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide !w-[300px] sm:!w-[492px]">
+                  <div>
+                    <div class="left-bottom-clip-path relative z-20 flex flex-col bg-neutral-200 px-3 pt-6 pb-30 sm:px-8 sm:pt-9 sm:pb-36">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="mb-6 h-auto w-11 object-contain sm:w-17.5" viewBox="0 0 70 56" fill="none">
+                        <path
+                          d="M66.7751 7.34746e-06L69.0515 6.01343C60.5149 9.20806 51.0298 16.349 51.0298 24.4295C51.0298 29.3154 53.4959 31.7584 58.8076 32.8859C66.7751 34.5772 70 39.651 70 44.5369C70 50.7383 65.2575 56 57.8591 56C48.7534 56 39.458 48.4832 39.458 34.3893C39.458 14.094 54.8239 3.57048 66.7751 7.34746e-06ZM27.3171 3.89793e-06L29.5935 6.01343C21.0569 9.20806 11.5718 16.349 11.5718 24.4295C11.5718 29.3154 14.0379 31.7584 19.3496 32.8859C27.3171 34.5772 30.542 39.651 30.542 44.5369C30.542 50.7383 25.7995 56 18.4011 56C9.29538 56 -6.97226e-06 48.4832 -5.74012e-06 34.3893C-3.96585e-06 14.094 15.3659 3.57047 27.3171 3.89793e-06Z"
+                          fill="#DADFE1"
+                        />
+                      </svg>
+                      <p class="text-center sm:text-left">
+                        Strategix Healthcare Solutions has been instrumental in revolutionizing our organization's approach to healthcare management. Their expert guidance and strategic insights have significantly
+                        enhanced our operational efficiency and overall performance.
+                      </p>
+                    </div>
+                    <div
+                      class="left-bottom-clip-path absolute top-1/2 left-1/2 z-10 flex h-full w-full -translate-x-[calc(50%+0.5px)] -translate-y-[calc(50%-0.2px)] scale-[1.004] flex-col bg-neutral-300 px-3 pt-6 pb-36 sm:px-8 sm:pt-9"
+                    ></div>
+                    <div class="absolute bottom-0 left-0 z-30 max-w-24">
+                      <p class="font-accent text-primary-dark mb-1.5 text-sm leading-none sm:text-lg">Jackie</p>
+                      <p class="text-primary text-[12px] leading-[1.1] sm:text-sm">Healthcare administrator</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonials-swiper-pagination mt-20 flex hidden justify-center md:flex"></div>
+          </div>
+        </section>
+
+        <section class="bg-contain bg-[20%_40%] bg-no-repeat py-15 md:bg-cover md:bg-bottom md:py-22.5" style="background-image: url(&quot;/images/cta-bg.png&quot;)">
+          <div class="container pb-0 md:pb-20 lg:pb-121">
+            <div class="flex flex-col items-center">
+              <h2 class="font-accent text-primary-dark mb-52 text-center text-3xl leading-none tracking-[-0.125rem] sm:text-4xl md:mb-4 md:mb-6 md:text-5xl">
+                Ready to take your healthcare <br />
+                agency to the next level?
+              </h2>
+              <p class="mb-6 max-w-164 text-center md:mb-10">
+                Whether you’re aiming to streamline operations, ensure compliance, or grow your business, the expert team at Strategix Healthcare Solutions is here to help. Let’s discuss how we can drive your agency’s
+                success—together.
+              </p>
+              <a href="#" class="bg-secondary border-secondary hover:text-primary-dark block rounded-lg px-11.5 py-3.5 text-center text-sm font-medium text-white uppercase transition-colors">book a meeting</a>
             </div>
           </div>
         </section>
