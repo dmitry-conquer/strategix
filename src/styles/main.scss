@@ -162,6 +162,9 @@
       font-size: var(--text-lg);
     }
   }
+  li {
+    line-height: 0;
+  }
 }
 
 // ================================
@@ -228,5 +231,12 @@
 @media (max-width: 75rem) {
   br {
     display: none !important;
+  }
+}
+
+a:not([class]) {
+  transition: color 0.3s ease;
+  &:hover {
+    color: var(--color-secondary);
   }
 }
