@@ -7,12 +7,13 @@ export default class BaseSlider {
     speed: 800,
     slidesPerView: 3,
     spaceBetween: 40,
+    loop: true,
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
     },
     pagination: {
-      el: ".swiper-pagination",
+      el: ".base-swiper-pagination",
       clickable: true,
     },
     navigation: {
@@ -38,7 +39,7 @@ export default class BaseSlider {
     const el = document.querySelector(this.selector);
     if (!el) return;
 
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 992) {
       if (this.swiper) {
         this.swiper.destroy(true, true);
         this.swiper = null;
